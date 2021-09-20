@@ -40,6 +40,8 @@ print(f"Device tensor is stored on: {tensor.device}")
 if torch.cuda.is_available():
     tensor = tensor.to('cuda')
 
+print(f"Device tensor is now stored on: {tensor.device}")
+
 # Standard numpy-like indexing and slicing:
 tensor = torch.ones(4, 4)
 print('First row: ', tensor[0])
